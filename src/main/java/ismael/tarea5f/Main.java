@@ -19,7 +19,11 @@ public class Main {
     public static void main(String[] args) {
         // TODO code application logic here
 
-        CuadradoMagico a =new CuadradoMagico();
+        ArrayList<CuadradoMagico> cuadrados = new ArrayList<CuadradoMagico>();
+        for (int i = 0; i < 15; i++) {
+            cuadrados.add(new CuadradoMagico());
+        }
+        for (CuadradoMagico a : cuadrados) {
             if (a.esCuadradoMagico()) {
                 System.out.println("Es un cuadrado magico");
             } else {
@@ -27,7 +31,5 @@ public class Main {
             }
             a.imprimirCuadrado();
         }
-
     }
-
-
+}
