@@ -19,11 +19,32 @@ public class CuadradoMagico {
     public CuadradoMagico() {
         for (int i = 0; i < 3; i++) {
             for (int j = 0; j < 3; j++) {
-                cuadrado[i][j] = rnd.nextInt();
+                cuadrado[i][j] = rnd.nextInt(9)+1;
             }
         }
     }
     
+    public int sumarFila (int nfila){
+        int sumaFila=0;
+        for (int i=0; i<3;i++){
+        sumaFila+=cuadrado[nfila][i];
+        }
+        return sumaFila;
+    }
     
+//    sumarColumna
+//    sumarDiagonalP
+//    sumarDagonalS
+    
+    
+    public void imprimirCuadrado(){
+      for (int i = 0; i < 3; i++) {
+            for (int j = 0; j < 3; j++) {
+                System.out.print("|"+cuadrado[i][j]+"|");
+            }
+            System.out.println("");
+        }
+    
+    }
   
 }
