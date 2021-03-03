@@ -13,7 +13,8 @@ import java.util.Random;
  */
 public class CuadradoMagico {
 
-    int cuadrado[][] = new int[3][3];
+    int nfilas = 3, ncolumnas = 3;
+    int cuadrado[][] = new int[nfilas][ncolumnas];
     Random rnd = new Random();
 
     public CuadradoMagico() {
@@ -27,7 +28,7 @@ public class CuadradoMagico {
     public int sumarFila(int nfila) {
         nfila--;
         int sumaFila = 0;
-        for (int i = 0; i < 3; i++) {
+        for (int i = 0; i < nfilas; i++) {
             sumaFila += cuadrado[nfila][i];
         }
         return sumaFila;
@@ -36,7 +37,7 @@ public class CuadradoMagico {
     public int sumarColumna(int ncol) {
         ncol--;
         int sumaCol = 0;
-        for (int i = 0; i < 3; i++) {
+        for (int i = 0; i < ncolumnas; i++) {
             sumaCol += cuadrado[i][ncol];
         }
         return sumaCol;
@@ -44,7 +45,7 @@ public class CuadradoMagico {
 
     public int sumarDiagonalP() {
         int sumaDiaP = 0;
-        for (int i = 0; i < 3; i++) {
+        for (int i = 0; i < nfilas; i++) {
             sumaDiaP += cuadrado[i][i];
         }
         return sumaDiaP;
@@ -53,7 +54,7 @@ public class CuadradoMagico {
     public int sumarDiagonalS() {
         int sumaDias = 0;
         int j = 3;
-        for (int i = 0; i < 3; i++) {
+        for (int i = 0; i < nfilas; i++) {
             {
                 j--;
                 sumaDias += cuadrado[i][j];
@@ -79,8 +80,8 @@ public class CuadradoMagico {
     }
 
     public void imprimirCuadrado() {
-        for (int i = 0; i < 3; i++) {
-            for (int j = 0; j < 3; j++) {
+        for (int i = 0; i < nfilas; i++) {
+            for (int j = 0; j < ncolumnas; j++) {
                 System.out.print("|" + cuadrado[i][j] + "|");
             }
             System.out.println("");
