@@ -27,7 +27,7 @@ public class Main {
         System.out.println("El resultado de la suma de la columna 3 es:" + a.sumarColumna(3));
         
         System.out.println("El resultado de la suma de la diagonal principal es:" + a.sumarDiagonalP());
-//        System.out.println("El resultado de la suma de la diagonal secundaria es:" + a.sumarDiagonalS());
+        System.out.println("El resultado de la suma de la diagonal secundaria es:" + a.sumarDiagonalS());
 //        a.imprimirCuadrado();
     }
 

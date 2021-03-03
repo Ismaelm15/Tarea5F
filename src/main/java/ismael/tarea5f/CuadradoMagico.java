@@ -50,7 +50,17 @@ public class CuadradoMagico {
         return sumaDiaP;
     }
 
+    public int sumarDiagonalS() {
+        int sumaDias = 0;
+        int j = 3;
+        for (int i = 0; i < 3; i++) {
+            {j--;
+                sumaDias += cuadrado[i][j];
+            }
+        }
+        return sumaDias;
 
+    }
 
 //    public void imprimirCuadrado() {
 //        for (int i = 0; i < 3; i++) {
