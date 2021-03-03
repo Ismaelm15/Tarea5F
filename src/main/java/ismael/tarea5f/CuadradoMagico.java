@@ -54,12 +54,28 @@ public class CuadradoMagico {
         int sumaDias = 0;
         int j = 3;
         for (int i = 0; i < 3; i++) {
-            {j--;
+            {
+                j--;
                 sumaDias += cuadrado[i][j];
             }
         }
         return sumaDias;
 
+    }
+
+    public boolean esCuadradoMagico() {
+        if (sumarDiagonalP() != sumarDiagonalS()) {
+            return false;
+        }
+        for (int i = 1; i < 4; i++) {
+            if (sumarDiagonalP() != sumarColumna(i)) {
+                return false;
+            }
+            if (sumarDiagonalP() != sumarFila(i)) {
+                return false;
+            }
+        }
+        return true;
     }
 
     public void imprimirCuadrado() {
