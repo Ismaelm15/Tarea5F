@@ -28,7 +28,7 @@ public class Main {
         
         System.out.println("El resultado de la suma de la diagonal principal es:" + a.sumarDiagonalP());
         System.out.println("El resultado de la suma de la diagonal secundaria es:" + a.sumarDiagonalS());
-//        a.imprimirCuadrado();
+        a.imprimirCuadrado();
     }
 
 }

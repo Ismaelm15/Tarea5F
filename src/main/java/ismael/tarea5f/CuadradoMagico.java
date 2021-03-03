@@ -62,13 +62,13 @@ public class CuadradoMagico {
 
     }
 
-//    public void imprimirCuadrado() {
-//        for (int i = 0; i < 3; i++) {
-//            for (int j = 0; j < 3; j++) {
-//                System.out.print("|" + cuadrado[i][j] + "|");
-//            }
-//            System.out.println("");
-//        }
-//
-//    }
+    public void imprimirCuadrado() {
+        for (int i = 0; i < 3; i++) {
+            for (int j = 0; j < 3; j++) {
+                System.out.print("|" + cuadrado[i][j] + "|");
+            }
+            System.out.println("");
+        }
+
+    }
 }
