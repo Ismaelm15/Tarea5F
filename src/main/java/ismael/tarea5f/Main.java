@@ -16,13 +16,18 @@ public class Main {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        
-        CuadradoMagico a= new CuadradoMagico();
+
+        CuadradoMagico a = new CuadradoMagico();
         System.out.println("El resultado de la suma de la fila 1 es:" + a.sumarFila(0));
         System.out.println("El resultado de la suma de la fila 2 es:" + a.sumarFila(1));
         System.out.println("El resultado de la suma de la fila 3 es:" + a.sumarFila(2));
+
+        System.out.println("El resultado de la suma de la columna 1 es:" + a.sumarColumna(0));
+        System.out.println("El resultado de la suma de la columna 2 es:" + a.sumarColumna(1));
+        System.out.println("El resultado de la suma de la columna 3 es:" + a.sumarColumna(2));
         
-        a.imprimirCuadrado();
+
+
     }
-    
+
 }
