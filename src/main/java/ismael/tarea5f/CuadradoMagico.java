@@ -25,6 +25,7 @@ public class CuadradoMagico {
     }
 
     public int sumarFila(int nfila) {
+        nfila--;
         int sumaFila = 0;
         for (int i = 0; i < 3; i++) {
             sumaFila += cuadrado[nfila][i];
@@ -33,6 +34,7 @@ public class CuadradoMagico {
     }
 
     public int sumarColumna(int ncol) {
+        ncol--;
         int sumaCol = 0;
         for (int i = 0; i < 3; i++) {
             sumaCol += cuadrado[i][ncol];
@@ -40,16 +42,23 @@ public class CuadradoMagico {
         return sumaCol;
     }
 
-//    sumarDiagonalP
-//    sumarDagonalS
+    public int sumarDiagonalP() {
+        int sumaDiaP = 0;
+        for (int i = 0; i < 3; i++) {
+            sumaDiaP += cuadrado[i][i];
+        }
+        return sumaDiaP;
+    }
 
-//    public void imprimirCuadrado(){
-//      for (int i = 0; i < 3; i++) {
+
+
+//    public void imprimirCuadrado() {
+//        for (int i = 0; i < 3; i++) {
 //            for (int j = 0; j < 3; j++) {
-//                System.out.print("|"+cuadrado[i][j]+"|");
+//                System.out.print("|" + cuadrado[i][j] + "|");
 //            }
 //            System.out.println("");
 //        }
-//    
+//
 //    }
 }
